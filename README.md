@@ -17,24 +17,10 @@ The project is built using Python and includes a web application for user intera
 ---
 
 ## Project Structure
-Precision-Agriculture-Using-ML/
-├── static/
-│ └── style/ # CSS files for the web app
-├── templates/ # HTML templates for the web app
-├── Crop Yield Prediction.ipynb # Jupyter notebook for yield prediction
-├── Crop_recommendation.csv # Dataset for crop recommendation
-├── Pickle_RL_Model.pkl # Pickle file for the trained model
-├── README.md # Project documentation
-├── app.py # Flask application for the web app
-├── crop.ipynb # Jupyter notebook for crop recommendation
-├── crop_app/ # Additional files for the crop app
-├── crop_app.py # Script for crop recommendation
-├── dtr.pkl # Decision Tree model pickle file
-├── main.py # Main script to run the project
-├── preprocesser.pkl # Preprocessing model pickle file
-├── preprocessor.pkl # Preprocessing model pickle file
-├── yield_df.csv # Dataset for yield prediction
 
+
+
+![Screenshot 2025-03-03 232440](https://github.com/user-attachments/assets/3b527398-7dba-42c8-9c85-3a42e7ba73ee)
 
 ---
 
