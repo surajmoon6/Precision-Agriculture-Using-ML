@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patil Agrotech</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/first.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="{{url_for('static', filename='style/predict_image.png')}}" alt="Predict Image">
+        </div>
+        <form action="form" method="post">
+            <table>
+                <tr>
+                    <td><label for="Nitrogen">Nitrogen:</label></td>
+                    <td><input type="text" id="Nitrogen" name="Nitrogen" min="0" max="100" placeholder="Nitrogen" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Phosphorus">Phosphorus:</label></td>
+                    <td><input type="text" id="Phosphorus" name="Phosphorus" min="0" max="100" placeholder="Phosphorus" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Potassium">Potassium:</label></td>
+                    <td><input type="text" id="Potassium" name="Potassium" min="0" max="100" placeholder="Potassium" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Temperature">Temperature:</label></td>
+                    <td><input type="text" id="Temperature" name="Temperature" min="0" max="100" placeholder="Temperature in Degree Celsius" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Humidity">Humidity:</label></td>
+                    <td><input type="text" id="Humidity" name="Humidity" min="0" max="100" placeholder="Relative Humidity in Percentage" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ph">ph:</label></td>
+                    <td><input type="text" id="ph" name="ph" min="0" max="14" placeholder="ph should be in between 0-14" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Rainfall">Rainfall:</label></td>
+                    <td><input type="text" id="Rainfall" name="Rainfall" placeholder="Rainfall in MM" required min="0" max="10000"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" id="submit" name="submit" value="Predict Your Crop">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <table>
+                <tr><td>Nitrogen:</td><td>Nitrogen</td></tr>
+                <tr><td>Phosphorus:</td><td>Phosphorus</td></tr>
+                <tr><td>Potassium:</td><td>Potassium</td></tr>
+                <tr><td>Temperature:</td><td>Temperature in Degree Celsius</td></tr>
+                <tr><td>Humidity:</td><td>Relative Humidity in Percentage</td></tr>
+                <tr><td>ph:</td><td>ph should be in between 0-14</td></tr>
+                <tr><td>Rainfall:</td><td>Rainfall in MM</td></tr>
+            </table>
+        </div>
+        <div class="footer-section">
+            <p>&copy; 2024 Sooraj Moon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

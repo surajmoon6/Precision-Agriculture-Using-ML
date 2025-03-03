@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/first.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="{{url_for('static', filename='style/predict_image.png')}}" alt="Predict Image">
+        </div>
+        <form action="/predict" method="post">
+            <table>
+                <tr>
+                    <td><label for="Year">Year:</label></td>
+                    <td><input type="number" id="Year" name="Year" value="2013" required></td>
+                </tr>
+                <tr>
+                    <td><label for="average_rain_fall_mm_per_year">Average Rainfall (mm/year):</label></td>
+                    <td><input type="number" id="average_rain_fall_mm_per_year" name="average_rain_fall_mm_per_year" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pesticides_tonnes">Pesticides (tonnes):</label></td>
+                    <td><input type="number" id="pesticides_tonnes" name="pesticides_tonnes" required></td>
+                </tr>
+                <tr>
+                    <td><label for="avg_temp">Average Temperature (°C):</label></td>
+                    <td><input type="number" id="avg_temp" name="avg_temp" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Area">Area:</label></td>
+                    <td><input type="text" id="Area" name="Area" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Item">Item:</label></td>
+                    <td><input type="text" id="Item" name="Item" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" id="submit" name="submit" value="Predict Your Crop">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {% if prediction %}
+            <div class="result">
+                <h2>Predicted Yield:</h2>
+                <h3 class="text-info">{{ prediction }}</h3>
+            </div>
+        {% endif %}
+    </div>
+    <footer>
+        <div class="footer-section">
+            <table>
+                <tr><td>Year:</td><td>Year</td></tr>
+                <tr><td>Average Rainfall:</td><td>Average Rainfall (mm/year)</td></tr>
+                <tr><td>Pesticides:</td><td>Pesticides (tonnes)</td></tr>
+                <tr><td>Average Temperature:</td><td>Average Temperature (°C)</td></tr>
+                <tr><td>Area:</td><td>Area</td></tr>
+                <tr><td>Item:</td><td>Item</td></tr>
+            </table>
+        </div>
+        <div class="footer-section">
+            <p>&copy; 2024 Sooraj Moon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

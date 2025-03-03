@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/prdiction_css.css')}}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="{{url_for('static', filename='style/logo.png')}}" alt="Crop Image">
+            <div class="movie-details">
+                <h2>Prediction Result</h2>
+                <p>Based on your soil nutrients</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="prediction-details">
+                <h4>According to your soil nutrients</h4>
+                <h4>You Should Grow:</h4>
+                <h4 class="prediction">{{prediction}}</h4>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="footer-section">
+                <h3>Understanding the Parameters</h3>
+                <p><strong>Nitrogen:</strong> Essential for plant growth and development, nitrogen is a key nutrient that contributes to the greening of plants and enhances photosynthesis. Adequate nitrogen levels in soil lead to healthy and productive crops.</p>
+                <p><strong>Phosphorus:</strong> Vital for energy transfer and storage in plants, phosphorus helps in root development and flower and seed production. It plays a crucial role in improving crop quality and yields.</p>
+                <p><strong>Potassium:</strong> Potassium regulates various physiological processes in plants, including water uptake, enzyme activation, and photosynthesis. It enhances the overall health and disease resistance of crops.</p>
+                <p><strong>Temperature:</strong> The ambient temperature affects seed germination, plant growth, and crop maturity. Monitoring temperature helps farmers optimize planting schedules and choose crops suitable for their climate.</p>
+                <p><strong>Humidity:</strong> Relative humidity influences water transpiration and disease occurrence in plants. Proper humidity management ensures optimal growth conditions and reduces the risk of fungal infections.</p>
+                <p><strong>ph:</strong> Soil pH affects nutrient availability and microbial activity. Maintaining the correct pH range ensures that plants can absorb essential nutrients efficiently, promoting healthy growth.</p>
+                <p><strong>Rainfall:</strong> Rainfall provides the necessary water for plant growth. Monitoring rainfall patterns helps farmers plan irrigation schedules and manage water resources effectively.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

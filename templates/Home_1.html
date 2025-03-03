@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Moon Agrotech</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/myhome.css')}}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="{{url_for('static', filename='style/logo.png')}}" alt="Logo">
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="banner">
+        <img src="{{url_for('static', filename='style/banner.jpg')}}" alt="Banner Image">
+        <div class="banner-text">
+          <h2>Precision Agriculture Using Machine Learning</h2>
+          <p>Get information details about your Farming Strategy</p>
+          
+        </div>
+      </div>
+      <section class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <img src="{{url_for('static', filename='style/about.jpg')}}" alt="About Image">
+          <p>Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase Profit. We use state-of-the-art machine learning and deep learning technologies to help you guide through the entire farming process. Make informed decisions to understand the demographics of your area, understand the factors that affect your crops, and keep them healthy for a super awesome seasonal yield.</p>
+        </div>
+      </section>
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+          <div class="service-box">
+            <img src="{{url_for('static', filename='style/crop.jpg')}}" alt="Crop Image">
+            <h3>Crop Recommendation</h3>
+            <p>Recommendation about the type of crops to be cultivated which is best suited for the respective conditions.</p>
+            <button onclick="window.location.href='/Predict'">View Details</button>
+          </div>
+          <div class="service-box">
+            <img src="{{url_for('static', filename='style/fertilizer.jpg')}}" alt="Rain Image">
+            <h3>Crop Yield Prediction Per Country</h3>
+            <p>Recommendation about the type of fertilizer best suited for the particular soil and the recommended crop.</p>
+            <button onclick="window.location.href='/fertilizer'">View Details</button>
+           
+          </div>
+          <div class="service-box">
+            <img src="{{url_for('static', filename='style/disease.jpg')}}" alt="Disease Image">
+            <h3>Crop Disease</h3>
+            <p>Predicting the name and causes of crop diseases and suggestions to cure it.</p>
+            <button>View Details</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sooraj Moon. All rights reserved. GO GREEN...</p>
+    </footer>
+  </body>
+</html>
