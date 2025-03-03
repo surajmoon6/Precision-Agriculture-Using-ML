@@ -19,8 +19,7 @@ The project is built using Python and includes a web application for user intera
 ## Project Structure
 
 
-
-![Screenshot 2025-03-03 232440](https://github.com/user-attachments/assets/3b527398-7dba-42c8-9c85-3a42e7ba73ee)
+![Screenshot 2025-03-03 232440](https://github.com/user-attachments/assets/2f6e4402-1835-442c-987f-55e70a217cae)
 
 ---
 
